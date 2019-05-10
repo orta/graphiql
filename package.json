@@ -43,7 +43,7 @@
     "preversion": ". ./resources/checkgit.sh && npm test",
     "test": "yarn check --integrity && npm run lint && npm run check && npm run testonly && npm run build",
     "testonly": "babel-node ./node_modules/.bin/_mocha $npm_package_options_mocha",
-    "build-for-static-deploy": "npm run build && cd example && npm install && "
+    "build-for-static-deploy": "npm run build && cd example && npm install"
   },
   "lint-staged": {
     "*.js": [
