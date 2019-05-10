@@ -111,7 +111,7 @@
         // In a PR preview, it connects to the Star Wars API externally.
         // Change this to point wherever you host your GraphQL server.
         const isDev = window.location.hostname === 'localhost'
-        const api = isDev ? 'https://swapi.graph.cool/' : '/graphql'
+        const api = isDev ? '/graphql' : 'https://swapi.graph.cool/'
         return fetch(api, {
           method: 'post',
           headers: {
